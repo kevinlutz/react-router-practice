@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  background-color: white;
+  animation: opening 1s ease-in-out;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+  margin-bottom: 1em;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+nav {
+  background-color: blue;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  min-height: 10vh;
+  padding: 2rem 0rem;
+}
+
+nav a {
+  display: flex;
+  justify-content: space-around;
+  flex: 1 1 20rem;
+}
+
+nav a:hover,
+nav a:active {
+  color: blue;
+  border-bottom: 2px solid blue;
+  cursor: pointer;
+}
+
+nav a.active {
+  color: white;
+  background: blue;
+}
+
+#home {
+  height: 50vh;
+  min-height: 400px;
+  background-color: white;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 1rem;
+}
+
+#about img {
+  max-height: 50%;
+}
+
+#about a {
+  display: block;
+}
+
+#listings {
+  background-color: whitesmoke;
+  min-height: 400px;
+}
+
+#listing-list {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 800px;
+  /*align-items:center;*/
+}
+
+.listing-item {
+  background-color: white;
+  padding: 2rem;
+  margin: 1rem;
+}
+
+.ammenities span {
+  background-color: lightblue;
+  margin: 0.25rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+form > input,
+form > textarea,
+form > fieldset {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+form > fieldset {
+  text-align: left;
+  padding: 0.5rem;
+}
+
+form input[type="checkbox"] {
+  margin-right: 0.25rem;
+}
+
+form button {
+  padding: 0.5rem;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+
+@media (min-width: 700px) {
+  #listing-list {
+    flex-direction: row;
+  }
+
+  .listing-item {
+    width: 50%;
+  }
+}
+
+/* 
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+*/
